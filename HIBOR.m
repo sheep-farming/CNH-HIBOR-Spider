@@ -31,5 +31,5 @@ while (cDate <= datetime(tYear,tMonth,tDay))
     plot(result(:,1),result(:,2:9));
     pause(0.1);
 end
-dlmwrite('a.csv', result(:,:),'delimiter', ',', 'precision', 9);
-fprintf('All Done!\n');
+dlmwrite('RESULT.csv', result(:,:),'delimiter', ',', 'precision', 9);
+fprintf('All Done!\nResult saved to RESULT.csv');
